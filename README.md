@@ -41,6 +41,6 @@ docker ps
 ### 5. Stop the Containers
 To stop the running containers, use:
 ```sh
-docker-compose down
+docker compose -f docker-compose.yml down
 ```
 
