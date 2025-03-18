@@ -18,15 +18,15 @@ docker login
 ### 2. Download the Docker Compose File
 Use `curl` or `wget` to download the `docker-compose.yml` file:
 ```sh
-curl -O <compose-file-url>
+curl -O https://github.com/Karthikeyanl2000/metadata/blob/main/docker-compose.yml
 # or
-wget <compose-file-url>
+wget https://github.com/Karthikeyanl2000/metadata/blob/main/docker-compose.yml
 ```
 
 ### 3. Build and Start the Containers
 Run the following command to build and start all services in detached mode:
 ```sh
-docker-compose up --build -d
+docker compose -f docker-compose.yml up --build -d
 ```
 The `--build` flag ensures that any changes to the Dockerfile are applied before starting the containers.
 
@@ -39,14 +39,5 @@ docker ps
 To stop the running containers, use:
 ```sh
 docker-compose down
-```
-
-## Configuration
-Modify the `docker-compose.yml` file to customize the services as needed. Environment variables can be configured using a `.env` file.
-
-## Logs
-To view logs for a specific container, use:
-```sh
-docker-compose logs -f <service-name>
 ```
 
