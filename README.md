@@ -7,10 +7,13 @@ Ensure you have the following installed on your system:
 - [Docker](https://www.docker.com/get-started)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 
-## Usage
+## Check Docker Installed
+```sh
+docker version
+```
 
 ### 1. Log in to Docker
-Before pulling images, authenticate with Docker using your credentials:
+Before pulling images, authenticate with docker credentials:
 ```sh
 docker login
 ```
