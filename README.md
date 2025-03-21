@@ -21,9 +21,9 @@ docker login
 ### 2. Download the Docker Compose File
 Use `curl` or `wget` to download the `docker-compose.yml` file:
 ```sh
-curl -O https://github.com/Karthikeyanl2000/metadata/blob/main/docker-compose.yml
+curl -O https://raw.githubusercontent.com/Karthikeyanl2000/metadata/main/docker-compose.yml
 # or
-wget https://github.com/Karthikeyanl2000/metadata/blob/main/docker-compose.yml
+wget https://raw.githubusercontent.com/Karthikeyanl2000/metadata/main/docker-compose.yml
 ```
 
 ### 3. Build and Start the Containers
